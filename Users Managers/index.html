@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Manager</title>
+    <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- My Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <h2 class="bg-info text-center py-3 rounded-pill text-white">Users Manager</h2>
+        </div>
+    </div>
+    
+    <div class="main">
+        <form id="myForm" class="mx-5">
+            <div>
+                <label for="uId"><strong>User Id :</strong></label>
+                <input class="form-control my-2 ms-3 w-75" type="text" id="uId">
+            </div>
+            <div>
+                <label for="uName"><strong>User Name :</strong></label>
+                <input class="form-control my-2 ms-3 w-75" type="text" id="uName">
+            </div>
+            <div>
+                <label for="uAge"><strong>User Age :</strong></label>
+                <input class="form-control my-2 ms-3 w-75" type="text" id="uAge">
+            </div>
+            <div class="check my-3">
+                <label for="select" class="me-3"><strong>User Status :</strong></label>
+                <select required id="select">
+                    <option selected disabled value="">Select</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+            <button type="submit" class="btn bg-info my-2 ms-3 rounded-pill text-white px-3" 
+            id="addProduct">Add Product</button>
+        </form>
+        <table class="w-100">
+            <thead>
+                <tr class="main-td">
+                    <td><strong>User Id</strong></td>
+                    <td><strong>User Name</strong></td>
+                    <td><strong>User Age</strong></td>
+                    <td><strong>User Status</strong></td>
+                    <td><strong>Edit</strong></td>
+                </tr>
+            </thead>
+            <tbody id="showArea">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <!-- Bootstrap Js Fille -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- My Js File -->
+    <script src="Js/main.js"></script>
+</body>
+</html>

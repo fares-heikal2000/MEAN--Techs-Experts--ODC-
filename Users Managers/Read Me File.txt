@@ -1,0 +1,9 @@
+مشروع ادارة منتاجات 
+قمت ببرمجة من الصفر باستخدام HTML & Css & Boootstrap & JavaScript
+وهو في الاساس تطبيق علي العديد من المواضيع الهامة في تعلم لغة الجافاسكريبت مثل 
+1. DOM 
+2. Local Storage
+3. Form Validation
+4. Bootstrap
+5. events
+6.

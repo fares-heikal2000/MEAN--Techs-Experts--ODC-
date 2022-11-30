@@ -1,0 +1,11 @@
+table {
+    margin-top: 50px;
+}
+.main-td td {
+    width:20%;
+    border: 2px solid gray;
+    padding: 20px;
+}
+#showArea td {
+    padding: 20px;
+}
