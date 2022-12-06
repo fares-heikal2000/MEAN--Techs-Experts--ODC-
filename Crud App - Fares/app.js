@@ -17,7 +17,7 @@ yargs.command({
         }
     },
     handler: function(argv){
-        notes(argv.title, argv.body)
+        notes.addNote(argv.title, argv.body)
     }
 })
 // ShowAll Command
@@ -48,8 +48,15 @@ yargs.command({
 yargs.command({
     command: "del",
     describe: "Use it to remove a new note",
-    handler: function(){
-        console.log("remove a note....");
+    builder: {
+        title: {
+            describe: "Note Title",
+            demandOption: true,
+            type: "string"
+        }
+    },
+    handler: function(argv){
+        notes.removeNote(argv.title)
     }
 })
 yargs.parse()
