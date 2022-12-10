@@ -21,7 +21,7 @@ const addNotes = (id, name, age, active) => {
 // Load All Notes
 const loadNotes = () => {
     try {
-        const dataBuffer = fs.readFileSync("notes.json")
+        const dataBuffer = fs.readFileSync("users.json")
         const dataJson = dataBuffer.toString();
         return JSON.parse(dataJson)
     } catch (e) {
@@ -32,7 +32,7 @@ const loadNotes = () => {
 // Write Into A Json File
 const writeIntoJsonFile = (newNote) => {
     notesInJson = JSON.stringify(newNote)
-    fs.writeFileSync("notes.json", notesInJson);
+    fs.writeFileSync("users.json", notesInJson);
 };
 
 // remove Note Funcation
